@@ -1,0 +1,11 @@
+{
+    "Name": "Zinx Server",
+    "Version": "v0.0.1",
+    "Host": "0.0.0.0",
+    "Port": 7777,
+    "MaxConn": 3,
+    "MaxPacketSize": 1024,
+    "WorkerPoolSize": 8,
+    "TaskQueueLen": 64,
+    "MaxMsgBufChan": 64
+}
