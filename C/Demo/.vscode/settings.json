@@ -4,6 +4,7 @@
     "clang-format.fallbackStyle": "LLVM",
     "clang-format.language.c.style": "",
     "files.associations": {
-        "inet.h": "c"
+        "inet.h": "c",
+        "malloc.h": "c"
     },
 }
