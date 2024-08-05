@@ -1,0 +1,36 @@
+# DockerFile dome
+
+# Arguments enabled in build
+ARG ImageName="ubuntu"
+ARG ImageTag="jammy"
+
+# The first command in DockerFile
+# Specify base image
+FROM ${ImageName}:${ImageTag}
+
+
+# Copy files from context to container
+COPY ./setup.sh /tmp/
+
+
+# Command on docker run
+CMD echo "hello docker"
+
+
+# Variables enabled in build and container
+ENV xxx=1
+ENV yyy=2
+
+
+# Run shell script in build
+RUN apt update \
+    && apt install -y build-essential curl make \
+    && cd /tmp \
+    && chmod +x setup.sh \
+    && ./setup.sh \
+    && rm setup.sh
+
+
+# Expose ports in container
+EXPOSE 443
+EXPOSE 53/udp

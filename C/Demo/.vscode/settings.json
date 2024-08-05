@@ -5,6 +5,7 @@
     "clang-format.language.c.style": "",
     "files.associations": {
         "inet.h": "c",
-        "malloc.h": "c"
+        "malloc.h": "c",
+        "semaphore.h": "c"
     },
 }
