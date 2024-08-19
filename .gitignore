@@ -2,3 +2,4 @@
 **/*.lnk
 **/*.exe
 **/bin/
+**/skynet/

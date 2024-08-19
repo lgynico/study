@@ -1,0 +1,19 @@
+
+# Kubernetes yaml 描述文件
+
+# header
+apiVersion: v1 # 资源版本
+kind: Pod      # 资源对象类型：Pod/Node/Job/Service
+metadata:      # 对象元信息
+  name: ngx-pod
+  labels:
+    env: demo
+    owner: chrono
+
+# body
+spec:
+  containers:
+  - image: nginx:alpine
+    name: ngx
+    ports:
+    - containerPort: 80
