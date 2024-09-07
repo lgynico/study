@@ -1,11 +1,5 @@
 #include <stdio.h>
-
-void inplace_swap(int *x, int *y)
-{
-    *y = *x ^ *y;
-    *x = *x ^ *y;
-    *y = *x ^ *y;
-}
+#include "inplace_swap.h"
 
 void main()
 {

@@ -1,0 +1,15 @@
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\bin\Debug\net8.0\professional_c#_and_.netcore.exe
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\bin\Debug\net8.0\professional_c#_and_.netcore.deps.json
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\bin\Debug\net8.0\professional_c#_and_.netcore.runtimeconfig.json
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\bin\Debug\net8.0\professional_c#_and_.netcore.dll
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\bin\Debug\net8.0\professional_c#_and_.netcore.pdb
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\professional_c#_and_.netcore.GeneratedMSBuildEditorConfig.editorconfig
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\professional_c#_and_.netcore.AssemblyInfoInputs.cache
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\professional_c#_and_.netcore.AssemblyInfo.cs
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\professional_c#_and_.netcore.csproj.CoreCompileInputs.cache
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\professional_c#_and_.netcore.sourcelink.json
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\professional_c#_and_.netcore.dll
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\refint\professional_c#_and_.netcore.dll
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\professional_c#_and_.netcore.pdb
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\professional_c#_and_.netcore.genruntimeconfig.cache
+D:\study\编程语言\csharp_demo\professional_c#_and_.netcore\obj\Debug\net8.0\ref\professional_c#_and_.netcore.dll

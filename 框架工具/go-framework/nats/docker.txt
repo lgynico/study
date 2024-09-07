@@ -1,0 +1,6 @@
+# nats-core
+docker run --name=nats-core -p 4222:4222 -d -it --rm nats:latest
+
+# nats-jetstream
+docker run --name=nats-jetstream -p 4222:4222 -it --rm nats:latest -js
+docker run -d -v ${pwd}/jetstream:/config -v ${pwd}/jetstream/data:/data/nats-server/jetstream --name=nats-jetstream -p 4222:4222 -it nats:latest -js -config /config/jetstream.conf -server_name js1

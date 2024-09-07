@@ -1,4 +1,4 @@
-#include "chapter02/example/inplace_swap.c"
+#include "../../chapter02/example/inplace_swap.h"
 
 void reverse_array(int a[], int cnt)
 {

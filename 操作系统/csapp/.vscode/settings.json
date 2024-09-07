@@ -1,3 +1,16 @@
 {
-    "C_Cpp.default.compilerPath": "D:\\devsoft\\mingw64\\bin\\gcc.exe"
+    "C_Cpp.default.compilerPath": "D:\\devsoft\\mingw64\\posix-seh-8.1.0\\bin\\gcc.exe",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.exe": true
+    },
+    "files.associations": {
+        "inplace_swap.h": "c",
+        "stdio.h": "c"
+    }
 }
