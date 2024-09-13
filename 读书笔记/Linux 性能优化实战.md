@@ -527,3 +527,223 @@ Time   per  request:        0.447  [ms] (mean, across  all  concurrent requests)
 Transfer rate:           375.75  [Kbytes / sec] received 
 ... 
 ```
+
+## 06 | 案例篇：系统的 CPU 使用率很高，但为啥却找不到高 CPU 的应用？
+> 准备：
+> 机器：两台 Ubuntu 18.04, 2 CPU, 8GB
+> 工具：docker, systat, perf, ab 等
+> apt install docker.io sysstat linux-tools-common apache2-utils
+
+终端 1 运行应用
+```bash
+$ docker run --name nginx -p 10000:80 -itd feisky/nginx:sp
+$ docker run --name phpfpm -itd --network container:nginx feisky/php-fpm:sp
+```
+
+终端 2 验证
+```bash
+$ curl http://192.168.1.15:10000/
+
+It works!
+```
+
+终端 2 执行 ab 压测
+```bash
+# 100 个并发请求 1000 次
+$ ab -c 100 -n 1000 http://192.168.1.15:10000/
+
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+...
+
+Requests per second:    106.09 [#/sec] (mean)
+Time per request:       942.555 [ms] (mean)
+Time per request:       9.426 [ms] (mean, across all concurrent requests)
+Transfer rate:          17.82 [Kbytes/sec] received
+
+```
+
+可以看到每秒只有 106 个请求。
+
+终端 2 继续执行 ab 压测
+```bash
+# 5 个并发请求 600 秒
+$ ab -c 5 -t 600 http://192.168.1.15:10000/
+```
+
+终端 1 使用 top 观察 CPU 使用情况
+```bash
+$ top
+
+top - 04:33:15 up 17 min,  2 users,  load average: 4.79, 3.20, 1.52
+Tasks: 127 total,   8 running,  72 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 35.2 us, 36.6 sy,  0.0 ni,  6.2 id,  0.0 wa,  0.0 hi, 21.9 si,  0.0 st
+KiB Mem :  8167892 total,  7141420 free,   230472 used,   796000 buff/cache
+KiB Swap:  4194300 total,  4194300 free,        0 used.  7660952 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                           
+   16 root      20   0       0      0      0 R   8.0  0.0   0:29.68 ksoftirqd/1                                                                       
+ 2672 systemd+  20   0   33104   3788   2364 R   6.3  0.0   0:24.14 nginx                                                                             
+26491 daemon    20   0  336696  15836   8160 S   3.7  0.2   0:02.83 php-fpm
+26490 daemon    20   0  336696  15508   7832 S   3.3  0.2   0:02.86 php-fpm
+26492 daemon    20   0  336696  15568   7892 R   3.0  0.2   0:02.82 php-fpm                                                                           
+26503 daemon    20   0  336696  15836   8160 S   2.7  0.2   0:02.79 php-fpm
+26509 daemon    20   0  336696  15836   8160 S   2.7  0.2   0:02.74 php-fpm
+ 1533 root      20   0 1416416  70948  48064 S   2.3  0.9   0:07.50 dockerd
+ 2607 root      20   0  712488   9656   7616 S   2.3  0.1   0:08.11 containerd-shim
+    5 root      20   0       0      0      0 I   0.3  0.0   0:00.62 kworker/u4:0
+    7 root      20   0       0      0      0 S   0.3  0.0   0:00.82 ksoftirqd/0
+    8 root      20   0       0      0      0 I   0.3  0.0   0:00.43 rcu_sched
+   15 root      rt   0       0      0      0 S   0.3  0.0   0:00.26 migration/1
+   38 root      20   0       0      0      0 I   0.3  0.0   0:00.24 kworker/u4:1
+ 2322 root      20   0       0      0      0 I   0.3  0.0   0:01.88 kworker/0:3
+    1 root      20   0  159708   8852   6576 S   0.0  0.1   0:01.29 systemd
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.01 kthreadd
+    3 root      20   0       0      0      0 I   0.0  0.0   0:00.00 kworker/0:0
+    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:0H
+    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_wq
+    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh
+   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.16 migration/0
+   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/0
+   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0
+   13 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/1
+```
+看到 us 是 35.2 us, sy 是 36.6，si 是 21.9
+> 没有看到原文一样的 us 到达 80 的情况，不知道哪里不对
+没有看到占用 CPU 特别高的进程，总和也达不到 us 的数值
+
+使用 pidstat 观察一下
+```bash
+$ pidstat 1
+
+04:31:45 AM   UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+04:31:46 AM     0        10    0.00    1.00    0.00    0.00    1.00     0  migration/0
+04:31:46 AM     0        16    0.00    8.00    0.00    0.00    8.00     1  ksoftirqd/1
+04:31:46 AM     0      1533    0.00    2.00    0.00    0.00    2.00     0  dockerd
+04:31:46 AM     0      2607    2.00    0.00    0.00    0.00    2.00     0  containerd-shim
+04:31:46 AM   101      2672    1.00    4.00    0.00    4.00    5.00     1  nginx
+04:31:46 AM     1     26490    0.00    2.00    0.00    5.00    2.00     0  php-fpm
+04:31:46 AM     1     26491    0.00    3.00    0.00    4.00    3.00     1  php-fpm
+04:31:46 AM     1     26492    1.00    2.00    0.00    7.00    3.00     0  php-fpm
+04:31:46 AM     1     26503    1.00    1.00    0.00    5.00    2.00     0  php-fpm
+04:31:46 AM     1     26509    0.00    3.00    0.00    6.00    3.00     1  php-fpm
+```
+也没发现高 CPU 进程
+
+回头看 top 的情况，发现大多数 php-fpm 进程处于 S 状态，处理 R 状态的是几个 stress 进程
+> 原文中可以看到 stress 进程，我看不到... 是不是因为 stress 版本问题
+
+接下来查看其中一个 stress 进程情况
+> 我这里没有所以没做这一步
+```bash
+$ pidstat -p 24344
+
+07:19:16 AM   UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+
+
+$ ps aux | grep 24344
+
+root     20675  0.0  0.0  13140  1064 pts/0    S+   07:19   0:00 grep --color=auto 24344
+```
+
+没有任何输出，说明进程已经不存在，可以用 top 再次看看。
+> 由于我实验出来没有看到 stress 进程，所以以下内容无法验证
+可以发送 stress 的 pid 一直在变，两个原因：
+1. 进程不断崩溃重启
+2. 都是短时进程，是应用通过 exec 调用外部命令，top 很难发现
+
+
+使用 pstree 查看 stress 进程的父子关系，发现是 php-fpm 的子进程
+```bash
+$ pstree | grep stress
+
+        |                 |         |-3*[php-fpm---sh---stress---stress]
+```
+
+
+接下来把机器 1 的源码拷贝出来，并找出调用 stress 的方法
+```bash
+$ docker cp phpfpm:/app .
+
+$ grep stress -r app
+
+app/index.php:// fake I/O with stress (via write()/unlink()).
+app/index.php:$result = exec("/usr/local/bin/stress -t 1 -d 1 2>&1", $output, $status);
+
+
+$ cat app/index.php
+
+<?php
+// fake I/O with stress (via write()/unlink()).
+$result = exec("/usr/local/bin/stress -t 1 -d 1 2>&1", $output, $status);
+if (isset($_GET["verbose"]) && $_GET["verbose"]==1 && $status != 0) {
+  echo "Server internal error: ";
+  print_r($output);
+} else {
+  echo "It works!";
+}
+
+?>
+```
+
+请求 verbose=1 之后看看情况
+```bash
+$ curl http://192.168.1.15:10000?verbose=1
+
+Server internal error: Array
+(
+    [0] => stress: info: [15223] dispatching hogs: 0 cpu, 0 io, 0 vm, 1 hdd
+    [1] => stress: FAIL: [15224] (563) mkstemp failed: Permission denied
+    [2] => stress: FAIL: [15223] (394) <-- worker 15224 returned error 1
+    [3] => stress: WARN: [15223] (396) now reaping child worker processes
+    [4] => stress: FAIL: [15223] (400) kill error: No such process
+    [5] => stress: FAIL: [15223] (451) failed run completed in 0s
+)
+```
+可以看到 `Permission denied` 和 `failed run completed`，这是 PHP 调用 stress 的一个 bug，没有创建临时文件的权限
+
+推测：由于权限错误，大量的 stress 进程在启动时初始化失败，进而导致用户 CPU 使用率的升高
+
+使用 perf 工具验证猜想
+```bash
+$ perf record -g # 等待几秒之后 ctrl + c
+
+$ perf report
+
+Samples: 78K of event 'cpu-clock', Event count (approx.): 19623500000
+Overhead  Command          Shared Object            Symbol
+   7.07%  ksoftirqd/1      [kernel.kallsyms]        [k] e1000_clean
+   5.60%  stress           [kernel.kallsyms]        [k] e1000_clean
+   4.96%  stress           libc-2.24.so             [.] random
+   4.06%  swapper          [kernel.kallsyms]        [k] native_safe_halt
+   3.92%  stress           libc-2.24.so             [.] random_r
+   3.64%  sh               libc-2.24.so             [.] strerror_l
+   3.61%  stress           libc-2.24.so             [.] strerror_l
+   3.38%  stress           [kernel.kallsyms]        [k] exit_to_usermode_loop
+   3.29%  nginx            [kernel.kallsyms]        [k] e1000_xmit_frame
+   2.37%  stress           stress                   [.] 0x0000000000002f29
+   1.93%  stress           [kernel.kallsyms]        [k] __softirqentry_text_start
+   1.88%  php-fpm          [kernel.kallsyms]        [k] e1000_clean
+   1.81%  stress           [kernel.kallsyms]        [k] _raw_spin_unlock_irqrestore
+   1.49%  php-fpm          [kernel.kallsyms]        [k] copy_page
+   1.48%  sh               [kernel.kallsyms]        [k] e1000_clean
+   1.33%  ksoftirqd/1      [kernel.kallsyms]        [k] e1000_xmit_frame
+   1.27%  nginx            [kernel.kallsyms]        [k] e1000_clean
+   1.27%  stress           stress                   [.] 0x0000000000002f25
+   1.22%  stress           libc-2.24.so             [.] 0x000000000001fd27
+   1.18%  sh               libc-2.24.so             [.] 0x000000000001fd27
+   1.15%  stress           stress                   [.] 0x0000000000000e80
+   1.15%  stress           stress                   [.] 0x0000000000002f14
+   1.15%  stress           stress                   [.] 0x0000000000002f09
+   1.13%  stress           stress                   [.] 0x0000000000002ef3
+   1.13%  stress           stress                   [.] 0x0000000000002f1e
+   1.03%  stress           stress                   [.] 0x0000000000002f18
+   1.02%  stress           stress                   [.] 0x0000000000002f1b
+   0.85%  stress           [kernel.kallsyms]        [k] __do_page_fault
+   0.81%  sh               ld-2.24.so               [.] 0x0000000000017287
+```
+原文中的 stress 占用 CPU 77, 就是它了
+
+结束，清理环境
+```bash
+$ docker rm -f nginx phpfpm
+```
