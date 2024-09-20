@@ -11,7 +11,7 @@ sudo vim /etc/docker/daemon.json
 ```json
 {
     "registry-mirrors": [
-	    "https://0df7nwfc.mirror.aliyuncs.com",
+	"https://0df7nwfc.mirror.aliyuncs.com",
         "https://registry.cn-hangzhou.aliyuncs.com",
         "https://mirror.ccs.tencentyun.com",
         "https://05f073ad3c0010ea0f4bc00b7105ec20.mirror.swr.myhuaweicloud.com",

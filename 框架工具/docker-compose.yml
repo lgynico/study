@@ -1,0 +1,28 @@
+# x-docker-compose-project: mp
+
+services:
+  redis_server:
+    container_name: redis_server
+    image: redis:latest
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+    volumes:
+      - type: bind
+        source: d:/data/redis
+        target: /data
+    restart: no
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - type: bind
+        source: d:/data/mongo
+        target: /data
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+    restart: no
