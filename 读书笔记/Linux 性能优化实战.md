@@ -38,12 +38,12 @@ $ uptime
 - 大量进程等待 CPU 调度，两者都会升高
 
 ### 5. 三个小案例
-> 机器：Ubuntu 18.04, 2 CPU, 8G<br>
-> 工具：<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;**stress/stress-ng**: Linux 压力测试工具<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;**sysstat**: Linux 性能工具包，包含 mpstat 和 pidstat
-> &nbsp;&nbsp;&nbsp;&nbsp;**mpstat**: 多核 CPU 分析工具
-> &nbsp;&nbsp;&nbsp;&nbsp;**pidstat**: 进程分析工具
+> 机器：Ubuntu 18.04, 2 CPU, 8G
+> 工具：
+> - **stress/stress-ng**: Linux 压力测试工具<br>
+> - **sysstat**: Linux 性能工具包，包含 mpstat 和 pidstat
+> - **mpstat**: 多核 CPU 分析工具
+> - **pidstat**: 进程分析工具
 
 1. CPU 密集型进程
 ```bash
@@ -201,8 +201,8 @@ Average:        0     15490    0.00    0.40    0.00    1.00    0.40     -  pidst
 
 ### 4. 案例：分析系统上下文切换
 > 工具：
-> &nbsp;&nbsp;vmstat: 分析系统内存使用情况，CPU 上下文切换和中断次数
-> &nbsp;&nbsp;sysbench: 多线程基准测试工具
+> - vmstat: 分析系统内存使用情况，CPU 上下文切换和中断次数
+> - sysbench: 多线程基准测试工具
 
 使用 sysbench 模拟多线程调度瓶颈
 ```bash
@@ -391,13 +391,13 @@ $ perf report
 ```
 
 ### 4. 案例：找到 CPU 使用率高的原因
-> 准备<br>
-> 机器：两台 Ubuntu 18.04, 2 CPU, 8GB<br>
-> 工具：`apt install docker.io sysstat linux-tools-common apache2-utils`<br>
-> &nbsp;&nbsp;docker: 用来安装服务<br>
-> &nbsp;&nbsp;systat: 看上面<br>
-> &nbsp;&nbsp;perf: 通过采样分析性能的工具<br>
-> &nbsp;&nbsp;ab: HTTP 性能测试工具<br>
+> 准备
+> 机器：两台 Ubuntu 18.04, 2 CPU, 8GB
+> 工具：`apt install docker.io sysstat linux-tools-common apache2-utils`
+> - docker: 用来安装服务
+> - systat: 看上面
+> - perf: 通过采样分析性能的工具
+> - ab: HTTP 性能测试工具
 
 在第一台机器启动两个服务
 ```bash
@@ -746,4 +746,44 @@ Overhead  Command          Shared Object            Symbol
 结束，清理环境
 ```bash
 $ docker rm -f nginx phpfpm
+```
+
+
+## 07 & 08 | 系统中出现大量不可中断进程和僵尸进程怎么办？
+僵尸进程：父进程来不及回收退出的子进程
+
+### 1. 进程状态
+top 命令中的进程标识（S）
+- R (Running/Runnable) 运行中或者就绪队列中
+- D (Disk Sleep) 不可中断睡眠
+- Z (Zombie) 僵尸进程
+  wait() / waitpid() 等待子进程结束
+  child -- SIGCHLD --> parent
+- S (Interruptible Sleep) 可中断睡眠
+- I (Idle) 空闲状态
+- T (Traced) 暂停/跟踪状态
+    SIGSTOP -> Stopped
+    SIGCONT -> Runnable
+- X (Dead) 消亡，不会在 top 中看到
+
+### 2. 案例分析
+> 准备：
+> 机器：Ubuntu 18.04, 2 CPU, 8GB
+> 工具：apt install docker.io sysstat
+> - docker
+> - dstat: 吸引 vmstat, iostat, ifstat 等工具优点，可同时观察 CPU、磁盘 IO、网络、内存使用情况
+> - systat
+> - perf
+
+安装应用实例
+```bash
+$ docker run --privileged --name=app -itd feisky/app:iowait
+```
+查看案例是否正常启动
+```bash
+# s 表示会话领导进程，+ 表示前台进程组
+$ ps aux | grep /app
+root      2832  0.0  0.0   4512  1556 pts/0    Ss+  12:14   0:00 /app
+root      2896  0.0  0.8  70052 65824 pts/0    D+   12:15   0:00 /app
+root      2897  0.0  0.8  70052 65824 pts/0    D+   12:15   0:00 /app
 ```
