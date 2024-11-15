@@ -1,0 +1,546 @@
+[INFO]2024/11/04 00:03:08.940030 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:03:18.424140 game.go:64: Receive message: userName:"nico"  password:"123"
+[INFO]2024/11/04 00:03:18.425670 game.go:72: receive: username=nico, password=123
+[ERROR]2024/11/04 00:05:01.296388 game.go:48: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 00:05:05.819276 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:05:16.361682 game.go:64: Receive message: userName:"nico"  password:"123"
+[INFO]2024/11/04 00:05:16.362119 game.go:72: receive: username=nico, password=123
+[INFO]2024/11/04 00:05:46.158514 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:05:46.173518 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:05:48.908913 game.go:64: Receive message: userName:"nico"  password:"123"
+[INFO]2024/11/04 00:05:48.909368 game.go:72: receive: username=nico, password=123
+[ERROR]2024/11/04 00:05:50.328341 game.go:60: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 00:05:50.329924 game.go:60: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 00:05:52.132630 game.go:64: Receive message: targetUserId:4294967295
+[INFO]2024/11/04 00:05:53.823656 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:05:53.920062 game.go:64: Receive message: moveToPosX:-307.5195  moveToPosY:-41.435257
+[INFO]2024/11/04 00:05:55.825437 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:05:56.002217 game.go:64: Receive message: targetUserId:4294967295
+[INFO]2024/11/04 00:05:57.830253 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:05:57.927441 game.go:64: Receive message: moveFromPosX:-266.90585  moveFromPosY:-42.687996  moveToPosX:-91.85647  moveToPosY:-94.35258
+[INFO]2024/11/04 00:05:59.825280 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:06:06.985050 game.go:64: Receive message: targetUserId:4294967295
+[INFO]2024/11/04 00:06:07.838598 game.go:43: Client incoming connection...
+[ERROR]2024/11/04 00:06:08.788063 game.go:48: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 00:06:08.788063 game.go:48: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 00:06:09.029684 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:19:38.845091 game.go:43: Client incoming connection...
+[INFO]2024/11/04 00:19:53.929834 game.go:64: Receive message: userName:"nico" password:"123"
+[INFO]2024/11/04 00:19:53.931249 userlogin.go:28: receive: username=nico, password=123
+[ERROR]2024/11/04 00:19:53.975284 game.go:60: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 00:19:53.976278 game.go:60: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 00:19:57.326247 game.go:64: Receive message: moveToPosX:-167.76213 moveToPosY:-66.60407
+[ERROR]2024/11/04 00:19:57.327809 game.go:68: handler not found: code=4
+[INFO]2024/11/04 00:19:59.417653 game.go:64: Receive message: moveFromPosX:-168.67853 moveFromPosY:-68.3264 moveToPosX:-13.020345 moveToPosY:-67.10485
+[ERROR]2024/11/04 00:19:59.418320 game.go:68: handler not found: code=4
+[INFO]2024/11/04 00:20:01.648450 game.go:64: Receive message: moveFromPosX:-12.825602 moveFromPosY:-66.2016 moveToPosX:-133.20815 moveToPosY:-3.004695
+[ERROR]2024/11/04 00:20:01.649005 game.go:68: handler not found: code=4
+[INFO]2024/11/04 00:20:07.028949 game.go:64: Receive message: moveFromPosX:-134.52806 moveFromPosY:-2.137588 moveToPosX:13.020345 moveToPosY:-114.679184
+[ERROR]2024/11/04 00:20:07.029972 game.go:68: handler not found: code=4
+[INFO]2024/11/04 00:20:07.958259 game.go:64: Receive message: moveFromPosX:-14.963226 moveFromPosY:-115.28962 moveToPosX:-164.75743 moveToPosY:-12.01878
+[ERROR]2024/11/04 00:20:07.958989 game.go:68: handler not found: code=4
+[INFO]2024/11/04 00:20:08.698933 game.go:64: Receive message: moveFromPosX:-108.91526 moveFromPosY:-21.337557 moveToPosX:-199.31142 moveToPosY:-86.13458
+[ERROR]2024/11/04 00:20:08.699046 game.go:68: handler not found: code=4
+[INFO]2024/11/04 00:20:09.684387 game.go:64: Receive message: moveFromPosX:-200.70416 moveFromPosY:-87.51357 moveToPosX:-99.65571 moveToPosY:51.07981
+[ERROR]2024/11/04 00:20:09.684941 game.go:68: handler not found: code=4
+[INFO]2024/11/04 00:20:10.555668 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:10.556266 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:20:10.745981 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:10.746977 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:20:10.930771 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:10.931773 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:20:11.110301 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:11.112131 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:20:11.287071 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:11.287289 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:20:11.457151 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:11.457254 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:20:12.000348 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:12.001722 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:20:12.214682 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:12.214682 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:20:12.374116 game.go:64: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:20:12.374524 game.go:68: handler not found: code=9
+[INFO]2024/11/04 00:27:27.276675 game.go:44: Client incoming connection...
+[ERROR]2024/11/04 00:27:31.012050 game.go:49: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 00:27:31.141300 game.go:44: Client incoming connection...
+[INFO]2024/11/04 00:27:35.751453 game.go:65: Receive message: userName:"nico" password:"123"
+[INFO]2024/11/04 00:27:35.752616 userlogin.go:28: receive: username=nico, password=123
+[ERROR]2024/11/04 00:27:35.797645 game.go:61: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 00:27:35.798420 game.go:61: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 00:27:40.740778 game.go:65: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:27:40.740778 game.go:69: handler not found: code=9
+[INFO]2024/11/04 00:27:41.502384 game.go:65: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 00:27:41.503726 game.go:69: handler not found: code=9
+[INFO]2024/11/04 00:27:42.148503 game.go:65: Receive message: moveToPosX:-89.64006 moveToPosY:-39.06103
+[ERROR]2024/11/04 00:27:42.149573 game.go:69: handler not found: code=4
+[INFO]2024/11/04 00:27:43.880240 game.go:65: Receive message: moveFromPosX:-89.70244 moveFromPosY:-40.588802 moveToPosX:-45.070423 moveToPosY:-79.123634
+[ERROR]2024/11/04 00:27:43.881242 game.go:69: handler not found: code=4
+[INFO]2024/11/04 00:27:44.609540 game.go:65: Receive message: moveFromPosX:-44.889614 moveFromPosY:-81.13922 moveToPosX:-142.723 moveToPosY:-48.07512
+[ERROR]2024/11/04 00:27:44.610623 game.go:69: handler not found: code=4
+[INFO]2024/11/04 00:27:45.270481 game.go:65: Receive message: moveFromPosX:-130.29128 moveFromPosY:-46.988804 moveToPosX:-38.56025 moveToPosY:-34.55399
+[ERROR]2024/11/04 00:27:45.271269 game.go:69: handler not found: code=4
+[INFO]2024/11/04 01:03:27.416082 game.go:44: Client incoming connection...
+[ERROR]2024/11/04 01:03:28.122014 game.go:38: websocket upgrade error: websocket: the client is not using the websocket protocol: 'upgrade' token not found in 'Connection' header
+[ERROR]2024/11/04 01:03:36.085518 game.go:49: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 01:35:07.851931 game.go:49: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 16:23:57.444233 game.go:45: Client incoming connection...
+[ERROR]2024/11/04 16:24:10.882188 game.go:52: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 16:24:11.002823 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:24:17.799067 game.go:68: Receive message: userName:"1" password:"1"
+[INFO]2024/11/04 16:24:17.801126 userlogin.go:28: receive: username=1, password=1
+[ERROR]2024/11/04 16:24:17.845994 game.go:64: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 16:24:17.846173 game.go:64: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 16:24:20.053500 game.go:68: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:24:20.054358 game.go:72: handler not found: code=9
+[INFO]2024/11/04 16:24:20.853724 game.go:68: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:24:20.854234 game.go:72: handler not found: code=9
+[INFO]2024/11/04 16:24:21.314005 game.go:68: Receive message: moveToPosX:-82.629105 moveToPosY:-29.045383
+[ERROR]2024/11/04 16:24:21.315025 game.go:72: handler not found: code=4
+[INFO]2024/11/04 16:24:21.521354 game.go:68: Receive message: moveFromPosX:-27.7504 moveFromPosY:-27.7504 moveToPosX:-82.629105 moveToPosY:-29.045383
+[ERROR]2024/11/04 16:24:21.521938 game.go:72: handler not found: code=4
+[INFO]2024/11/04 16:24:21.744548 game.go:68: Receive message: moveFromPosX:-55.500797 moveFromPosY:-29.888 moveToPosX:-82.629105 moveToPosY:-29.045383
+[ERROR]2024/11/04 16:24:21.745596 game.go:72: handler not found: code=4
+[INFO]2024/11/04 16:24:21.970988 game.go:68: Receive message: moveFromPosX:-83.264 moveFromPosY:-27.7376 moveToPosX:-155.74335 moveToPosY:30.547731
+[ERROR]2024/11/04 16:24:21.972105 game.go:72: handler not found: code=4
+[INFO]2024/11/04 16:24:22.173980 game.go:68: Receive message: moveFromPosX:-108.902405 moveFromPosY:-2.0991993 moveToPosX:-168.76369 moveToPosY:56.58842
+[ERROR]2024/11/04 16:24:22.175488 game.go:72: handler not found: code=4
+[INFO]2024/11/04 16:24:22.742051 game.go:68: Receive message: moveFromPosX:-170.80327 moveFromPosY:57.664005 moveToPosX:-4.5070424 moveToPosY:18.528952
+[ERROR]2024/11/04 16:24:22.743794 game.go:72: handler not found: code=4
+[INFO]2024/11/04 16:24:23.042831 game.go:68: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:24:23.043660 game.go:72: handler not found: code=9
+[INFO]2024/11/04 16:24:23.243886 game.go:68: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:24:23.245344 game.go:72: handler not found: code=9
+[INFO]2024/11/04 16:24:23.458552 game.go:68: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:24:23.459132 game.go:72: handler not found: code=9
+[INFO]2024/11/04 16:24:23.649578 game.go:68: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:24:23.650684 game.go:72: handler not found: code=9
+[INFO]2024/11/04 16:24:23.825917 game.go:68: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:24:23.826839 game.go:72: handler not found: code=9
+[INFO]2024/11/04 16:38:42.474493 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.490128 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.504604 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.520282 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.535735 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.553724 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.567398 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.583420 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.599842 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.614406 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:42.629661 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:38:44.098089 game.go:45: Client incoming connection...
+[ERROR]2024/11/04 16:38:54.990484 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.991012 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.991543 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.991012 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.990484 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.990484 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.990484 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.991012 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.991012 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.990484 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.991543 game.go:53: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:38:54.991543 game.go:53: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 16:38:55.136755 game.go:45: Client incoming connection...
+[INFO]2024/11/04 16:44:22.518276 game.go:69: Receive message: userName:"1"  password:"1"
+[INFO]2024/11/04 16:44:22.519534 userlogin.go:28: receive: username=1, password=1
+[ERROR]2024/11/04 16:44:22.552103 game.go:65: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 16:44:22.552593 game.go:65: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 16:44:24.294615 game.go:69: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:44:24.295720 game.go:73: handler not found: code=9
+[INFO]2024/11/04 16:44:24.694610 game.go:69: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:44:24.695207 game.go:73: handler not found: code=9
+[INFO]2024/11/04 16:44:25.021249 game.go:69: Receive message: moveToPosX:-133.20815  moveToPosY:-51.07981
+[ERROR]2024/11/04 16:44:25.022577 game.go:73: handler not found: code=4
+[INFO]2024/11/04 16:44:25.230627 game.go:69: Receive message: moveFromPosX:-27.750399  moveFromPosY:-27.750399  moveToPosX:-133.20815  moveToPosY:-51.07981
+[ERROR]2024/11/04 16:44:25.232110 game.go:73: handler not found: code=4
+[INFO]2024/11/04 16:44:25.444044 game.go:69: Receive message: moveFromPosX:-55.5136  moveFromPosY:-51.251198  moveToPosX:-133.20815  moveToPosY:-51.07981
+[ERROR]2024/11/04 16:44:25.444849 game.go:73: handler not found: code=4
+[INFO]2024/11/04 16:44:25.816543 game.go:69: Receive message: moveFromPosX:-102.46403  moveFromPosY:-49.126396  moveToPosX:-205.32082  moveToPosY:11.517997
+[ERROR]2024/11/04 16:44:25.816660 game.go:73: handler not found: code=4
+[INFO]2024/11/04 16:44:26.026567 game.go:69: Receive message: moveFromPosX:-130.22725  moveFromPosY:-21.363203  moveToPosX:-179.28012  moveToPosY:47.574333
+[ERROR]2024/11/04 16:44:26.028003 game.go:73: handler not found: code=4
+[INFO]2024/11/04 16:44:26.203882 game.go:69: Receive message: moveFromPosX:-151.57768  moveFromPosY:-0.012802784  moveToPosX:-83.63068  moveToPosY:59.09233
+[ERROR]2024/11/04 16:44:26.204411 game.go:73: handler not found: code=4
+[INFO]2024/11/04 16:44:26.435620 game.go:69: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:44:26.435874 game.go:73: handler not found: code=9
+[INFO]2024/11/04 16:44:26.637347 game.go:69: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:44:26.638313 game.go:73: handler not found: code=9
+[INFO]2024/11/04 16:44:26.793615 game.go:69: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:44:26.794838 game.go:73: handler not found: code=9
+[INFO]2024/11/04 16:44:26.936084 game.go:69: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:44:26.937039 game.go:73: handler not found: code=9
+[INFO]2024/11/04 16:47:07.158599 game.go:39: Client incoming connection...
+[INFO]2024/11/04 16:47:07.172580 game.go:39: Client incoming connection...
+[INFO]2024/11/04 16:47:07.188086 game.go:39: Client incoming connection...
+[INFO]2024/11/04 16:47:07.203556 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 16:47:08.464563 context.go:79: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:47:08.464563 context.go:79: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:47:08.464563 context.go:79: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 16:47:08.465128 context.go:79: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 16:47:08.806128 game.go:39: Client incoming connection...
+[INFO]2024/11/04 16:47:13.252372 context.go:95: Receive message: userName:"1" password:"1"
+[INFO]2024/11/04 16:47:13.253730 userlogin.go:28: receive: username=1, password=1
+[ERROR]2024/11/04 16:47:13.290202 context.go:91: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 16:47:13.290866 context.go:91: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 16:47:14.405002 context.go:95: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:47:14.405780 context.go:99: handler not found: code=9
+[INFO]2024/11/04 16:47:14.668093 context.go:95: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:47:14.668167 context.go:99: handler not found: code=9
+[INFO]2024/11/04 16:47:15.033427 context.go:95: Receive message: moveToPosX:-103.66197 moveToPosY:-17.026604
+[ERROR]2024/11/04 16:47:15.034865 context.go:99: handler not found: code=4
+[INFO]2024/11/04 16:47:15.293374 context.go:95: Receive message: moveFromPosX:-32.0256 moveFromPosY:-17.0752 moveToPosX:-103.66197 moveToPosY:-17.026604
+[ERROR]2024/11/04 16:47:15.294433 context.go:99: handler not found: code=4
+[INFO]2024/11/04 16:47:15.475573 context.go:95: Receive message: moveFromPosX:-55.513603 moveFromPosY:-14.937599 moveToPosX:-103.66197 moveToPosY:-17.026604
+[ERROR]2024/11/04 16:47:15.476364 context.go:99: handler not found: code=4
+[INFO]2024/11/04 16:47:16.354421 context.go:95: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:47:16.355004 context.go:99: handler not found: code=9
+[INFO]2024/11/04 16:47:16.571037 context.go:95: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:47:16.571563 context.go:99: handler not found: code=9
+[INFO]2024/11/04 16:47:16.770075 context.go:95: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:47:16.770243 context.go:99: handler not found: code=9
+[INFO]2024/11/04 16:47:17.137371 context.go:95: Receive message: moveFromPosX:-104.614456 moveFromPosY:-17.0752 moveToPosX:-19.029734 moveToPosY:-63.09859
+[ERROR]2024/11/04 16:47:17.138610 context.go:99: handler not found: code=4
+[ERROR]2024/11/04 16:47:19.639593 context.go:79: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 16:47:19.791086 game.go:39: Client incoming connection...
+[INFO]2024/11/04 16:56:50.785325 game.go:39: Client incoming connection...
+[INFO]2024/11/04 16:56:54.273169 context.go:117: Receive message: userName:"1" password:"1"
+[INFO]2024/11/04 16:56:54.274334 userlogin.go:28: receive: username=1, password=1
+[ERROR]2024/11/04 16:56:54.300259 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:54.300468 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:55.211151 context.go:101: rate limit exceeded
+[INFO]2024/11/04 16:56:55.509713 context.go:117: Receive message: moveFromPosX:-38.4256 moveFromPosY:-29.862398 moveToPosX:-80.62598 moveToPosY:-28.544601
+[ERROR]2024/11/04 16:56:55.510439 context.go:121: handler not found: code=4
+[ERROR]2024/11/04 16:56:55.691680 context.go:101: rate limit exceeded
+[INFO]2024/11/04 16:56:57.678388 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:56:57.679313 context.go:121: handler not found: code=9
+[ERROR]2024/11/04 16:56:57.839624 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:58.018533 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:58.179086 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:58.346003 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:58.508034 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:58.669836 context.go:101: rate limit exceeded
+[INFO]2024/11/04 16:56:58.841681 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 16:56:58.842044 context.go:121: handler not found: code=9
+[ERROR]2024/11/04 16:56:59.040455 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:59.228230 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:59.401541 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:56:59.557799 context.go:101: rate limit exceeded
+[INFO]2024/11/04 16:57:00.768652 context.go:117: Receive message: moveFromPosX:-81.10082 moveFromPosY:-29.875198 moveToPosX:-54.084507 moveToPosY:15.524257
+[ERROR]2024/11/04 16:57:00.769307 context.go:121: handler not found: code=4
+[ERROR]2024/11/04 16:57:01.047143 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:57:01.676210 context.go:101: rate limit exceeded
+[INFO]2024/11/04 16:57:01.864251 context.go:117: Receive message: moveFromPosX:-81.08802 moveFromPosY:1.3973117e-06 moveToPosX:-183.78717 moveToPosY:1.001565
+[ERROR]2024/11/04 16:57:01.865808 context.go:121: handler not found: code=4
+[ERROR]2024/11/04 16:57:02.156636 context.go:101: rate limit exceeded
+[ERROR]2024/11/04 16:57:02.319355 context.go:101: rate limit exceeded
+[INFO]2024/11/04 19:53:59.186399 game.go:39: Client incoming connection...
+[INFO]2024/11/04 19:55:37.400331 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 19:55:46.301979 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 19:55:49.819208 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 19:55:49.999990 game.go:39: Client incoming connection...
+[INFO]2024/11/04 19:55:58.478037 context.go:117: Receive message: userName:"nico"  password:"1"
+[INFO]2024/11/04 19:55:58.479481 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 19:55:58.483417 service.go:11: login error: sql: no rows in result set
+[ERROR]2024/11/04 19:55:58.484312 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 19:55:58.484828 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:04:53.303552 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 20:04:59.192298 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:07:44.999668 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 20:07:45.069243 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:07:50.250636 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 20:07:50.252184 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:07:50.254322 service.go:11: login error: sql: no rows in result set
+[ERROR]2024/11/04 20:07:50.254577 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 20:07:50.254577 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:07:59.016847 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 20:07:59.017129 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:07:59.019130 service.go:11: login error: sql: no rows in result set
+[ERROR]2024/11/04 20:07:59.019130 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 20:07:59.019130 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:08:08.870208 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 20:08:08.870719 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:08:49.286851 service.go:11: login error: sql: no rows in result set
+[ERROR]2024/11/04 20:08:49.286851 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 20:08:49.287371 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:10:23.218101 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 20:10:23.219127 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:11:21.174387 service.go:11: login error: sql: no rows in result set
+[ERROR]2024/11/04 20:11:21.174913 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 20:11:21.174913 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:14:10.639779 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 20:14:20.426168 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:14:22.141464 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 20:14:22.142567 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:14:22.144437 service.go:16: user auth failed: nico
+[ERROR]2024/11/04 20:14:22.144437 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 20:14:22.144437 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:14:26.950336 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 20:14:26.950848 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:14:26.952419 service.go:16: user auth failed: nico
+[ERROR]2024/11/04 20:14:26.952990 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 20:14:26.952990 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:14:33.521142 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 20:14:33.521142 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:14:36.435163 context.go:90: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 20:14:53.332184 service.go:16: user auth failed: nico
+[ERROR]2024/11/04 20:14:57.291132 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 20:14:57.291132 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:15:23.076286 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 20:15:27.047003 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 20:15:28.737635 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 20:15:28.853185 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:15:32.297597 context.go:117: Receive message: userName:"nico"  password:"1"
+[INFO]2024/11/04 20:15:32.298512 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:15:32.300309 service.go:20: login error: Error 1054 (42S22): Unknown column 'last_update_time' in 'field list'
+[ERROR]2024/11/04 20:15:32.300826 userlogin.go:34: user not exists: nico
+[ERROR]2024/11/04 20:15:32.300826 context.go:128: handler error: code=13, rescode=0, err=user not exists: nico
+[INFO]2024/11/04 20:16:01.587197 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 20:16:01.704871 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:16:06.897737 context.go:117: Receive message: userName:"nico"  password:"1"
+[INFO]2024/11/04 20:16:06.898690 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:16:08.871678 context.go:113: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 20:16:08.871678 context.go:113: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 20:16:09.857380 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 20:16:09.857468 context.go:121: handler not found: code=9
+[INFO]2024/11/04 20:16:10.349290 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 20:16:10.349866 context.go:121: handler not found: code=9
+[INFO]2024/11/04 20:16:10.767205 context.go:117: Receive message: moveToPosX:-110.0236  moveToPosY:-37.513767
+[ERROR]2024/11/04 20:16:10.767501 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:11.156311 context.go:117: Receive message: moveFromPosX:-49.1008  moveFromPosY:-38.4384  moveToPosX:-181.52635  moveToPosY:-66.71912
+[ERROR]2024/11/04 20:16:11.156413 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:11.365452 context.go:117: Receive message: moveFromPosX:-76.851204  moveFromPosY:-66.188805  moveToPosX:-181.52635  moveToPosY:-66.71912
+[ERROR]2024/11/04 20:16:11.365711 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:11.577731 context.go:117: Receive message: moveFromPosX:-104.60165  moveFromPosY:-68.32641  moveToPosX:-233.89456  moveToPosY:-21.400473
+[ERROR]2024/11/04 20:16:11.579278 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:11.997342 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 20:16:11.997953 context.go:121: handler not found: code=9
+[INFO]2024/11/04 20:16:12.183602 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 20:16:12.184262 context.go:121: handler not found: code=9
+[INFO]2024/11/04 20:16:12.349780 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 20:16:12.351308 context.go:121: handler not found: code=9
+[INFO]2024/11/04 20:16:12.514392 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 20:16:12.515309 context.go:121: handler not found: code=9
+[INFO]2024/11/04 20:16:13.266189 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 20:16:13.266637 context.go:121: handler not found: code=9
+[INFO]2024/11/04 20:16:13.656212 context.go:117: Receive message: moveFromPosX:-157.99051  moveFromPosY:-21.350399  moveToPosX:-28.953577  moveToPosY:-60.676632
+[ERROR]2024/11/04 20:16:13.657177 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:14.190968 context.go:117: Receive message: moveFromPosX:-89.664024  moveFromPosY:-61.9136  moveToPosX:9.819042  moveToPosY:-14.854445
+[ERROR]2024/11/04 20:16:14.191891 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:14.972403 context.go:117: Receive message: moveFromPosX:10.688008  moveFromPosY:-12.812799  moveToPosX:88.37136  moveToPosY:67.22266
+[ERROR]2024/11/04 20:16:14.973035 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:15.727698 context.go:117: Receive message: moveFromPosX:89.66404  moveFromPosY:68.31361  moveToPosX:88.8749  moveToPosY:-62.187256
+[ERROR]2024/11/04 20:16:15.728514 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:16.239195 context.go:117: Receive message: moveFromPosX:87.55204  moveFromPosY:2.1504033  moveToPosX:-112.541306  moveToPosY:11.329661
+[ERROR]2024/11/04 20:16:16.239484 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:16:16.477048 context.go:117: Receive message: moveFromPosX:57.63842  moveFromPosY:12.838404  moveToPosX:-112.541306  moveToPosY:11.329661
+[ERROR]2024/11/04 20:16:16.477741 context.go:121: handler not found: code=4
+[INFO]2024/11/04 20:17:14.645254 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 20:17:14.707325 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 20:17:16.855968 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 20:17:16.988685 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:17:22.644913 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 20:17:22.646181 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:17:22.681052 context.go:113: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 20:17:22.682049 context.go:113: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 20:20:03.168335 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 20:20:03.549080 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:20:04.426867 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 20:20:04.427470 context.go:121: handler not found: code=9
+[ERROR]2024/11/04 20:20:06.393916 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 20:20:06.525705 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:20:10.779451 context.go:117: Receive message: userName:"nico"  password:"1"
+[INFO]2024/11/04 20:20:10.780846 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:20:10.835057 context.go:113: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 20:20:10.835575 context.go:113: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 20:20:56.863913 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 20:20:57.215214 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:20:57.230259 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 20:21:00.620240 context.go:90: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 20:21:00.620240 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 20:21:00.760660 game.go:39: Client incoming connection...
+[INFO]2024/11/04 20:21:04.587685 context.go:117: Receive message: userName:"nico"  password:"1"
+[INFO]2024/11/04 20:21:04.588480 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 20:21:04.645632 context.go:113: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 20:21:04.646681 context.go:113: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 21:26:56.994502 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 21:26:59.189270 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 21:27:01.497379 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 21:27:01.661047 game.go:39: Client incoming connection...
+[INFO]2024/11/04 21:27:12.482813 context.go:117: Receive message: userName:"nico"  password:"1"
+[INFO]2024/11/04 21:27:12.483818 userlogin.go:30: receive: username=nico, password=1
+[ERROR]2024/11/04 21:27:12.541148 context.go:113: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 21:27:12.542284 context.go:113: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 21:27:14.159979 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 21:27:14.160987 context.go:121: handler not found: code=9
+[INFO]2024/11/04 21:27:14.806354 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 21:27:14.807472 context.go:121: handler not found: code=9
+[INFO]2024/11/04 21:27:15.086315 context.go:117: Receive message: moveToPosX:-94.1471  moveToPosY:-5.007825
+[ERROR]2024/11/04 21:27:15.087383 context.go:121: handler not found: code=4
+[INFO]2024/11/04 21:27:15.466051 context.go:117: Receive message: moveFromPosX:-49.088  moveFromPosY:-6.3872004  moveToPosX:-94.1471  moveToPosY:-5.007825
+[ERROR]2024/11/04 21:27:15.466964 context.go:121: handler not found: code=4
+[INFO]2024/11/04 21:27:16.092879 context.go:117: Receive message: moveFromPosX:-96.06404  moveFromPosY:-4.2496004  moveToPosX:-148.73239  moveToPosY:36.55712
+[ERROR]2024/11/04 21:27:16.093941 context.go:121: handler not found: code=4
+[INFO]2024/11/04 21:27:16.482360 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 21:27:16.482958 context.go:121: handler not found: code=9
+[INFO]2024/11/04 21:27:16.866136 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 21:27:16.867383 context.go:121: handler not found: code=9
+[INFO]2024/11/04 21:59:13.231956 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 21:59:14.163739 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 21:59:17.210272 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 21:59:17.342602 game.go:39: Client incoming connection...
+[INFO]2024/11/04 21:59:21.549709 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 21:59:21.551262 userlogin.go:32: receive: username=nico, password=1
+[INFO]2024/11/04 21:59:41.980161 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 21:59:43.821724 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 22:00:13.923457 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 22:00:19.099903 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 22:00:19.196786 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 22:00:29.448811 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 22:00:29.598135 game.go:39: Client incoming connection...
+[INFO]2024/11/04 22:00:33.507347 context.go:117: Receive message: userName:"nico" password:"1"
+[INFO]2024/11/04 22:00:33.508504 userlogin.go:32: receive: username=nico, password=1
+[INFO]2024/11/04 22:01:28.591173 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/04 22:01:28.970146 game.go:39: Client incoming connection...
+[INFO]2024/11/04 22:01:28.985729 game.go:39: Client incoming connection...
+[ERROR]2024/11/04 22:01:33.440200 context.go:90: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/04 22:01:33.440200 context.go:90: websocket read error: websocket: close 1001 (going away)
+[INFO]2024/11/04 22:01:33.562025 game.go:39: Client incoming connection...
+[INFO]2024/11/04 22:01:37.822713 context.go:117: Receive message: userName:"1" password:"1"
+[INFO]2024/11/04 22:01:37.823763 userlogin.go:32: receive: username=1, password=1
+[ERROR]2024/11/04 22:01:37.871016 context.go:113: decode message error: code=0, err=data is empty
+[ERROR]2024/11/04 22:01:37.871332 context.go:113: decode message error: code=2, err=data is empty
+[INFO]2024/11/04 22:01:39.151694 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:39.151853 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:39.799386 context.go:117: Receive message: moveToPosX:-144.72614 moveToPosY:-0.5007825
+[ERROR]2024/11/04 22:01:39.799909 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:40.327748 context.go:117: Receive message: moveFromPosX:-68.31361 moveFromPosY:-2.1248 moveToPosX:-198.81064 moveToPosY:47.574333
+[ERROR]2024/11/04 22:01:40.327933 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:41.251292 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:41.252306 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:41.877480 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:41.878398 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:42.259102 context.go:117: Receive message: moveFromPosX:-185.74092 moveFromPosY:49.1136 moveToPosX:-209.82785 moveToPosY:-90.14085
+[ERROR]2024/11/04 22:01:42.261142 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:43.066550 context.go:117: Receive message: moveFromPosX:-211.36656 moveFromPosY:-55.539196 moveToPosX:-112.676056 moveToPosY:-125.6964
+[ERROR]2024/11/04 22:01:43.067217 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:43.770717 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:43.770945 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:44.619695 context.go:117: Receive message: moveFromPosX:-121.702446 moveFromPosY:-125.977646 moveToPosX:24.538342 moveToPosY:-42.56651
+[ERROR]2024/11/04 22:01:44.620695 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:45.556892 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:45.556926 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:46.200513 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:46.201507 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:46.815109 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:46.815109 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:47.384603 context.go:117: Receive message: moveFromPosX:-2.1503928 moveFromPosY:-40.563194 moveToPosX:-113.67762 moveToPosY:-19.530516
+[ERROR]2024/11/04 22:01:47.385138 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:47.898934 context.go:117: Receive message: moveFromPosX:-68.3136 moveFromPosY:-19.199991 moveToPosX:-207.82472 moveToPosY:13.020345
+[ERROR]2024/11/04 22:01:47.899708 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:48.478263 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:48.478584 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:49.090675 context.go:117: Receive message: moveFromPosX:-140.92807 moveFromPosY:14.963208 moveToPosX:-210.82942 moveToPosY:-109.17058
+[ERROR]2024/11/04 22:01:49.091265 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:49.795817 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:49.796834 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:50.444288 context.go:117: Receive message: moveFromPosX:-211.39218 moveFromPosY:-74.7136 moveToPosX:-69.608765 moveToPosY:-122.6917
+[ERROR]2024/11/04 22:01:50.445289 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:51.103179 context.go:117: Receive message: moveFromPosX:-125.97766 moveFromPosY:-123.814445 moveToPosX:-4.5070424 moveToPosY:-38.059467
+[ERROR]2024/11/04 22:01:51.104180 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:51.626426 context.go:117: Receive message: moveFromPosX:-59.788795 moveFromPosY:-57.625584 moveToPosX:-165.759 moveToPosY:12.519562
+[ERROR]2024/11/04 22:01:51.626936 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:52.154655 context.go:117: Receive message: moveFromPosX:-128.10243 moveFromPosY:10.688012 moveToPosX:-208.32552 moveToPosY:-70.61033
+[ERROR]2024/11/04 22:01:52.155380 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:52.878741 context.go:117: Receive message: moveFromPosX:-209.22896 moveFromPosY:-72.576 moveToPosX:-27.042253 moveToPosY:-115.68075
+[ERROR]2024/11/04 22:01:52.878901 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:53.370415 context.go:117: Receive message: moveFromPosX:-145.19046 moveFromPosY:-117.401634 moveToPosX:-3.5054772 moveToPosY:-14.021909
+[ERROR]2024/11/04 22:01:53.371337 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:54.223991 context.go:117: Receive message: moveFromPosX:-36.300762 moveFromPosY:-12.787173 moveToPosX:-187.79343 moveToPosY:-5.5086074
+[ERROR]2024/11/04 22:01:54.223991 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:54.620481 context.go:117: Receive message: moveFromPosX:-87.53918 moveFromPosY:-4.249573 moveToPosX:-190.79813 moveToPosY:-88.6385
+[ERROR]2024/11/04 22:01:54.621406 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:54.931374 context.go:117: Receive message: moveFromPosX:-125.97762 moveFromPosY:-42.687973 moveToPosX:-54.58529 moveToPosY:-133.70892
+[ERROR]2024/11/04 22:01:54.931543 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:55.292190 context.go:117: Receive message: moveFromPosX:-79.01437 moveFromPosY:-89.6512 moveToPosX:31.048513 moveToPosY:-100.65728
+[ERROR]2024/11/04 22:01:55.292433 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:55.571341 context.go:117: Receive message: moveFromPosX:-42.713554 moveFromPosY:-102.46401 moveToPosX:47.07355 moveToPosY:-60.59468
+[ERROR]2024/11/04 22:01:55.572302 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:55.804013 context.go:117: Receive message: moveFromPosX:-12.825551 moveFromPosY:-72.57598 moveToPosX:47.07355 moveToPosY:-60.59468
+[ERROR]2024/11/04 22:01:55.804891 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:56.030481 context.go:117: Receive message: moveFromPosX:14.950449 moveFromPosY:-59.763172 moveToPosX:47.07355 moveToPosY:-60.59468
+[ERROR]2024/11/04 22:01:56.030972 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:56.235747 context.go:117: Receive message: moveFromPosX:40.55045 moveFromPosY:-61.887974 moveToPosX:47.07355 moveToPosY:-60.59468
+[ERROR]2024/11/04 22:01:56.235782 context.go:121: handler not found: code=4
+[INFO]2024/11/04 22:01:56.887989 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:56.888939 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:57.076861 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:57.077224 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:57.259803 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:57.260446 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:57.441035 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:57.442165 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:57.642506 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:57.643334 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:57.810491 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:57.811012 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:57.962593 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:57.963064 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:58.127516 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:58.127794 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:58.277961 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:58.278479 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:58.426794 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:58.427577 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:58.570441 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:58.571025 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:58.743613 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:58.744599 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:58.893222 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:58.893222 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:59.062652 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:59.063118 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:59.225609 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:59.227799 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:59.394277 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:59.395273 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:59.559819 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:59.561473 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:01:59.715154 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:01:59.715273 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:00.438036 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:00.438941 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:01.069835 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:01.070499 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:01.581282 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:01.581697 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:01.979372 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:01.980826 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:02.165702 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:02.166499 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:02.346242 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:02.347032 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:02.529647 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:02.529647 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:02.684494 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:02.685476 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:02.861933 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:02.863519 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:03.046463 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:03.046884 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:03.198686 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:03.198686 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:03.363593 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:03.363593 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:03.701235 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:03.701456 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:04.115027 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:04.115988 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:04.527117 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:04.528664 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:05.015613 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:05.016289 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:05.571085 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:05.571189 context.go:121: handler not found: code=9
+[INFO]2024/11/04 22:02:05.950786 context.go:117: Receive message: targetUserId:4294967295
+[ERROR]2024/11/04 22:02:05.950861 context.go:121: handler not found: code=9

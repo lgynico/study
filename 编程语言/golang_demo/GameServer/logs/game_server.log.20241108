@@ -1,0 +1,124 @@
+[INFO]2024/11/08 17:25:42.708519 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/08 17:36:44.895164 game.go:54: Client incoming connection...
+[INFO]2024/11/08 17:36:44.905854 game.go:54: Client incoming connection...
+[INFO]2024/11/08 17:36:47.209693 game.go:54: Client incoming connection...
+[INFO]2024/11/08 17:36:50.391909 context.go:128: Receive message: UserLoginCmd
+[INFO]2024/11/08 17:36:50.392433 user_login.go:26: receive: username=1, password=1
+[INFO]2024/11/08 17:36:50.449928 context.go:128: Receive message: UserEntryCmd
+[INFO]2024/11/08 17:36:50.449928 context.go:128: Receive message: WhoElseIsHereCmd
+[INFO]2024/11/08 17:36:51.582763 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/08 17:36:52.423893 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/08 17:36:52.836831 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/08 17:36:53.524929 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:36:53.734513 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:36:53.916736 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:36:54.074731 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:37:03.252301 game.go:54: Client incoming connection...
+[INFO]2024/11/08 17:49:39.445910 game.go:54: Client incoming connection...
+[INFO]2024/11/08 17:49:50.938475 game.go:54: Client incoming connection...
+[INFO]2024/11/08 17:50:23.570250 context.go:128: Receive message: UserLoginCmd
+[INFO]2024/11/08 17:50:23.570790 user_login.go:26: receive: username=1, password=1
+[INFO]2024/11/08 17:50:23.635811 context.go:128: Receive message: UserEntryCmd
+[INFO]2024/11/08 17:50:23.636846 context.go:128: Receive message: WhoElseIsHereCmd
+[INFO]2024/11/08 17:50:26.167273 game.go:54: Client incoming connection...
+[INFO]2024/11/08 17:50:27.791948 context.go:128: Receive message: UserLoginCmd
+[INFO]2024/11/08 17:50:27.792474 user_login.go:26: receive: username=2, password=2
+[INFO]2024/11/08 17:50:27.841783 context.go:128: Receive message: UserEntryCmd
+[INFO]2024/11/08 17:50:27.841783 context.go:128: Receive message: WhoElseIsHereCmd
+[INFO]2024/11/08 17:50:29.071056 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/08 17:50:29.955734 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/08 17:50:30.371752 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/08 17:50:30.731402 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/08 17:50:31.057378 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:50:31.057909 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:50:31.283823 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:50:31.283823 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:50:31.466263 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:50:31.466798 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:50:31.645753 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:50:31.646295 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:50:31.811848 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:50:31.812378 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:50:31.987745 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:50:31.987745 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:50:32.169970 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:50:32.169970 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:50:32.367445 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:50:32.367980 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:51:02.711054 db_saver.go:72: lazy save: user_4
+[INFO]2024/11/08 17:59:29.447397 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:29.447950 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:30.299089 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:30.299610 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:30.478951 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:30.478951 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:30.647954 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:30.648479 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:30.816223 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:30.816746 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:30.980208 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:30.980208 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:31.137085 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:31.137616 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:31.304168 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:31.304168 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:31.475956 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:31.476536 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:31.650726 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:31.651250 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:31.810061 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:31.810592 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:31.989432 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:31.989954 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:32.634070 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:32.634595 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:32.789394 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:32.789394 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/08 17:59:33.312418 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:37.299007 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/08 17:59:39.839148 game.go:54: Client incoming connection...
+[INFO]2024/11/08 18:00:03.710226 db_saver.go:72: lazy save: user_4
+[ERROR]2024/11/08 18:00:22.820688 context.go:101: websocket read error: read tcp 127.0.0.1:54321->127.0.0.1:14585: wsarecv: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:101: websocket read error: read tcp 127.0.0.1:54321->127.0.0.1:14814: wsarecv: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:101: websocket read error: read tcp 127.0.0.1:54321->127.0.0.1:14599: wsarecv: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:101: websocket read error: read tcp 127.0.0.1:54321->127.0.0.1:1168: wsarecv: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:101: websocket read error: read tcp 127.0.0.1:54321->127.0.0.1:14806: wsarecv: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:101: websocket read error: read tcp 127.0.0.1:54321->127.0.0.1:14583: wsarecv: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:101: websocket read error: read tcp 127.0.0.1:54321->127.0.0.1:14867: wsarecv: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:101: websocket read error: read tcp 127.0.0.1:54321->127.0.0.1:14588: wsarecv: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14599: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14583: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14588: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14814: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14867: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14585: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821222 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14806: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.821750 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:1168: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.824392 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14599: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.824392 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14583: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.824918 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14588: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.824918 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14814: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.825442 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14867: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.826500 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14806: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.826500 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:1168: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.827041 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14599: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.827576 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14583: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.827576 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14588: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.828661 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14867: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.828661 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14806: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.829193 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:1168: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.829739 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14583: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.830264 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14588: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.830825 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14867: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.830825 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14806: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.831349 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:1168: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.831349 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14583: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.831877 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14588: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.832414 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14867: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.833511 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14806: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.834036 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14583: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.834568 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14588: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.835096 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14867: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.836684 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14588: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.837204 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14867: wsasend: An existing connection was forcibly closed by the remote host.
+[ERROR]2024/11/08 18:00:22.837204 context.go:85: websocket write error: write tcp 127.0.0.1:54321->127.0.0.1:14588: wsasend: An existing connection was forcibly closed by the remote host.

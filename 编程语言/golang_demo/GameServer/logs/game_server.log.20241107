@@ -1,0 +1,156 @@
+[INFO]2024/11/07 23:29:10.840225 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/07 23:29:18.033467 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:29:28.775628 context.go:128: Receive message: UserLoginCmd
+[INFO]2024/11/07 23:29:28.776627 user_login.go:26: receive: username=1, password=1
+[INFO]2024/11/07 23:29:28.849403 context.go:128: Receive message: UserEntryCmd
+[INFO]2024/11/07 23:29:28.849806 context.go:128: Receive message: WhoElseIsHereCmd
+[INFO]2024/11/07 23:29:30.411670 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:30.606113 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:30.787518 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:30.955261 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:31.472385 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:29:31.676398 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:29:31.941177 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:29:32.156148 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:29:32.937334 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:29:34.446609 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:35.092850 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:35.525562 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:35.778495 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:35.970383 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:36.163478 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:52.563561 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:29:55.580795 context.go:128: Receive message: UserLoginCmd
+[INFO]2024/11/07 23:29:55.581748 user_login.go:26: receive: username=2, password=2
+[INFO]2024/11/07 23:29:55.644586 context.go:128: Receive message: UserEntryCmd
+[INFO]2024/11/07 23:29:55.646269 context.go:128: Receive message: WhoElseIsHereCmd
+[INFO]2024/11/07 23:29:56.964339 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:57.672116 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:29:57.884971 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:29:58.634449 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:29:59.416097 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:29:59.642561 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:30:00.053342 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:30:00.317858 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:30:00.318481 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/07 23:30:39.485947 mysql.go:29: mysql init seccuess !!!
+[INFO]2024/11/07 23:30:39.530371 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.542929 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.558696 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.573874 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.591121 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.604857 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.620524 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.636396 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.652300 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.667980 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.683016 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.698487 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.713567 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.730067 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:39.745695 game.go:45: Client incoming connection...
+[ERROR]2024/11/07 23:30:42.099617 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:42.099617 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:42.099617 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:42.101189 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.099617 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:42.100142 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:42.100142 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:42.100142 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:42.100669 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.100669 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.100669 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.100669 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.100669 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.100669 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.101715 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.103299 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.103299 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.103823 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.103823 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.104350 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.104874 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.105394 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.105394 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.105919 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.105919 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.106436 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.106436 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.106965 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.106965 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.107485 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.108010 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.108538 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.109113 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.109620 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:42.110187 context.go:85: websocket write error: websocket: close sent
+[INFO]2024/11/07 23:30:42.255908 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:44.562194 context.go:128: Receive message: UserLoginCmd
+[INFO]2024/11/07 23:30:44.563003 user_login.go:26: receive: username=1, password=1
+[INFO]2024/11/07 23:30:44.610076 context.go:128: Receive message: UserEntryCmd
+[INFO]2024/11/07 23:30:44.611049 context.go:128: Receive message: WhoElseIsHereCmd
+[ERROR]2024/11/07 23:30:45.777570 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:45.779076 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.777829 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:45.778547 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:45.778547 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:45.778547 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:45.778547 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:45.779076 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:45.779076 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.779076 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.779076 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.779076 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.779076 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.779076 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.779076 context.go:101: websocket read error: websocket: close 1001 (going away)
+[ERROR]2024/11/07 23:30:45.779601 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.779601 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.782296 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.783392 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.783955 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.784478 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.785022 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.785544 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.786080 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.786596 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.787171 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.787171 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.787694 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.787694 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.788270 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.788791 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.788791 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.789309 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.789309 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.789826 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.789826 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.790349 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.790873 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.791391 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.791403 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.791403 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.791919 context.go:85: websocket write error: websocket: close sent
+[ERROR]2024/11/07 23:30:45.792433 context.go:85: websocket write error: websocket: close sent
+[INFO]2024/11/07 23:30:46.524515 game.go:45: Client incoming connection...
+[INFO]2024/11/07 23:30:48.609913 context.go:128: Receive message: UserLoginCmd
+[INFO]2024/11/07 23:30:48.610507 user_login.go:26: receive: username=2, password=2
+[INFO]2024/11/07 23:30:48.646894 context.go:128: Receive message: UserEntryCmd
+[INFO]2024/11/07 23:30:48.647194 context.go:128: Receive message: WhoElseIsHereCmd
+[INFO]2024/11/07 23:30:49.845902 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:30:49.846951 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/07 23:30:50.589133 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:30:50.589397 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/07 23:30:50.775914 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:30:50.776341 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/07 23:30:50.950038 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:30:50.950865 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/07 23:30:51.131755 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:30:51.132638 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/07 23:30:51.292008 context.go:128: Receive message: UserAttkCmd
+[INFO]2024/11/07 23:30:51.292171 user_attack.go:30: attack: 16 -> 4
+[INFO]2024/11/07 23:30:51.644475 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:30:52.234398 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:30:52.604309 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:30:53.719429 context.go:128: Receive message: UserMoveToCmd
+[INFO]2024/11/07 23:31:21.493169 db_saver.go:55: lazy save: user_4
