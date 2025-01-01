@@ -12,26 +12,40 @@ import (
 )
 
 func TestInsertionSort(t *testing.T) {
-	testSort(Insertion)
+	testSort(Insertion, 10000, 1000, 100)
 }
 
 func TestSelection(t *testing.T) {
-	testSort(Selection)
+	testSort(Selection, 10000, 1000, 100)
 }
 
 func TestBubble(t *testing.T) {
-	testSort(Bubble)
+	testSort(Bubble, 1000, 1090, 100)
+	// Bubble([]int{0, 2, -8, 8, 1})
 }
 
 func TestMerge(t *testing.T) {
 	// testSort(Merge)
-	testSort(MergeAdvance)
+	testSort(MergeAdvance, 10000, 1000, 100)
 }
 
 func TestQuick(t *testing.T) {
 	// testSort(QuickV1)
 	// testSort(Quick)
-	testSort(Quick)
+	testSort(Quick, 10000, 1000, 100)
+}
+
+func TestHeap(t *testing.T) {
+	testSort(Heap, 10000, 1000, 100)
+}
+
+func TestCount(t *testing.T) {
+	testSort(Count, 10000, 1000, 10)
+}
+
+func TestBucket(t *testing.T) {
+	testSort(Bucket, 10000, 1000, 100)
+	testSort(BucketAdvance, 10000, 1000, 100)
 }
 
 func TestNetherlandFlag(t *testing.T) {
@@ -48,19 +62,13 @@ func TestNetherlandFlag(t *testing.T) {
 	fmt.Println(pl, pr)
 }
 
-func testSort(sortFunc func([]int)) {
+func testSort(sortFunc func([]int), testCount, maxSize, max int) {
 	log.Println("test begin")
-
-	var (
-		testCount = 10000
-		maxSize   = 100
-		max       = 1000
-	)
 
 	for i := 0; i < testCount; i++ {
 		var (
 			size = rand.Intn(maxSize)
-			arr  = arrays.RandomArray(0, max, size)
+			arr  = arrays.RandomArray(-10, max, size)
 			arr1 = arrays.CopyArray(arr)
 			arr2 = arrays.CopyArray(arr)
 		)

@@ -51,3 +51,21 @@ func Shuffle[T any](arr []T) {
 		arr[i], arr[j] = arr[j], arr[i]
 	}
 }
+
+func MaxMin[T constraints.Comparable](arr []T) (max, min T) {
+	if len(arr) == 0 {
+		return
+	}
+
+	max, min = arr[0], arr[0]
+	for _, v := range arr {
+		if v > max {
+			max = v
+		}
+		if v < min {
+			min = v
+		}
+	}
+
+	return
+}
