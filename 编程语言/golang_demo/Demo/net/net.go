@@ -6,7 +6,7 @@ import (
 	"net"
 )
 
-func main() {
+func Net() {
 	conn, err := net.Dial("tcp", "www.baidu.com:80")
 	if err != nil {
 		panic("dial err: " + err.Error())
@@ -24,7 +24,7 @@ func main() {
 			break
 		}
 
-		fmt.Printf(string(data))
+		fmt.Println(string(data))
 	}
 
 	fmt.Println()
