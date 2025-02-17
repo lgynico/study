@@ -1,25 +1,19 @@
 package main
 
 import (
+	"image/color"
+
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
 type Game struct {
-	opt        Option
 	chessboard Chessboard
 }
 
-func NewGame(opts ...OptionFunc) *Game {
-	g := &Game{
-		opt:        DefaultOption(),
+func NewGame() *Game {
+	return &Game{
 		chessboard: NewChessboard(),
 	}
-
-	for _, optFunc := range opts {
-		optFunc(&g.opt)
-	}
-
-	return g
 }
 
 func (p *Game) Update() error {
@@ -27,9 +21,10 @@ func (p *Game) Update() error {
 }
 
 func (p *Game) Draw(screen *ebiten.Image) {
+	screen.Fill(color.White)
 	p.chessboard.Draw(screen)
 }
 
 func (p *Game) Layout(outsideWidth int, outsideHeight int) (screenWidth int, screenHeight int) {
-	return p.opt.ScreenWidth, p.opt.ScreenHeight
+	return ScreenWidth, ScreenHeight
 }
