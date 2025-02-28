@@ -19,7 +19,7 @@ func (p *SceneMap) AStar(srcX, srcZ, dstX, dstZ int) []int {
 		found   = false
 		src     = p.combineToCell(srcX, srcZ)
 		dst     = p.combineToCell(dstX, dstZ)
-		queue   = treemap.NewWith(func(a, b interface{}) int {
+		queue   = treemap.NewWith(func(a, b any) int {
 			var (
 				costA = fcosts[a.(int)]
 				costB = fcosts[b.(int)]
